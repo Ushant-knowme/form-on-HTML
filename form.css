@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+*{
+    -webkit-animation-timing-function: linear;
+}
+
+body{
+    font-family: 'Itim', cursive;
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(45deg, rgb(228, 194, 99), rgb(231, 185, 98), white);
+    background-size: 600%, 600%;
+    background-position: 0, 0;
+    animation: animate 30s linear infinite;
+}
+
+form {
+    font-family:'Itim', cursive;    
+}
+
+button{
+    border:2px solid black;
+    padding:17px 15px;
+    border-radius:15px 14px;
+    width:100%;
+    cursor:pointer;
+    font-family:'Roboto', sans-serif;
+    font-size:15px;
+    background-color:rgb(225,195,225);
+    box-shadow: 5px 5px grey;  
+}
+
+.p{
+    padding:1px 3px;
+    border:4px solid black;
+    border-radius:15px;
+    font-family: 'Roboto', sans-serif;
+    font-size:17px;
+   }
+  
+textarea{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px red;
+    transition: 1s;
+}
+     
+textarea:focus{
+    transition: 1s;
+    box-shadow: -5px -10px red;
+}
+
+select{
+    font-family:'Roboto', sans-serif;
+}
+
+a{   
+    text-decoration: none !important;
+    font-weight: bolder;
+    color: rgb(161, 53, 161);
+    border:3px solid black;
+    padding: 10px  15px;
+    border-radius:15px;
+    background-color: yellow;
+  }
+  
+h2 {
+    font-family: 'Girassol', cursive;
+    border:2px solid black;
+    padding:5px 10px;
+    border-radius:30px;
+    background-color:white;
+    box-shadow:5px 4px grey;
+    }    
+
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid  ;
+    border-radius: 4px;
+    box-sizing: border-box;
+}   
+
+@keyframes animate{
+    0%{
+        background-position: 0%, 50%;
+    }
+    50%{
+        background-position: 100%, 50%;
+    }
+    100%{
+        background-position: 0%, 50%;
+    }
+}
